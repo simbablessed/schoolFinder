@@ -198,7 +198,7 @@ export function CompareProvider({ children }: { children: ReactNode }) {
         toggleFavorite,
         hasFavorite,
         userRole,
-        userProfile: USER_PROFILES[userRole],
+        userProfile: USER_PROFILES[userRole] || USER_PROFILES.guest,
         switchRole,
         isSpotlightOpen,
         openSpotlight,
